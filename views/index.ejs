@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>test page</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <% if(list && list.length > 0) { %>
+      <ul>
+        <% for(let i = 0; i < list.length; i++) { %>
+          <li><%= list[i].nameCn %></li>
+        <% } %>
+      </ul>
+    <% } %>
+  </body>
+</html>
